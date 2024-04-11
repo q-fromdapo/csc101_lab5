@@ -12,3 +12,6 @@ band_price = 24.99
 medium_size_fee = 2.00
 large_size_fee = 4.00
 
+def show_stats(style_basic, style_graphic, style_band, size_small, size_medium, size_large, total_sales)
+  print('T-Shirt Style Statistics')
+  #FINISH PRINTING STATS FUNCTION
