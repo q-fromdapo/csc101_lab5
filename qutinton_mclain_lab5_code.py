@@ -31,4 +31,24 @@ def show_stats(style_basic, style_graphic, style_band, size_small, size_medium, 
 
 #PURCHASE T-SHIRT FUNCTION
 def purchase_t_shirt(style_basic, style_graphic, style_band, size_small, size_medium, size_large, total_sales):
-  #FINISH PURCHASE FUNC
+  print('Styles:')
+  print('1. Basic T-Shirt - $12.99')
+  print('2. Graphic T-Shirt - $16.99')
+  print('3. Band T-Shirt - $24.99')
+  #WRITE GET CHOICE FUNC
+  
+  print('Sizes:')
+  print('1. Small')
+  print('2. Medium')
+  print('3. Large')
+  #GET CHOICE FUNC
+
+
+
+
+
+
+
+
+
+
