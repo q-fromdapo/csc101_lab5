@@ -116,7 +116,7 @@ def calculate_price(style, size):
 
 
 
-
+main()
 
 
 
