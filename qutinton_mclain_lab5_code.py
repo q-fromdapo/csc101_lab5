@@ -35,13 +35,16 @@ def purchase_t_shirt(style_basic, style_graphic, style_band, size_small, size_me
   print('1. Basic T-Shirt - $12.99')
   print('2. Graphic T-Shirt - $16.99')
   print('3. Band T-Shirt - $24.99')
-  #WRITE GET CHOICE FUNC
+  style = get_choice('Choose a style for your T-Shirt: ', 1, 3)
   
   print('Sizes:')
   print('1. Small')
   print('2. Medium')
   print('3. Large')
-  #GET CHOICE FUNC
+  size = get_choice('Choose a size for your T-Shirt: ', 1, 3)
+
+  price = 
+  #CALCULATE PRICE FUNCTION
 
 
 #MENU FUNCTION
@@ -68,6 +71,17 @@ def main():
   total_sales = 0
 
   
+#STYLE AND SIZE CHOOSING FUNCTION
+def get_choice(choice, min_val, max_val):
+  while True: 
+    choice = input(choice)
+    if choice.isdigit():
+      choice = int(choice)
+      if min_val <= choice <= max_val:
+        return choice
+    print(f'Invalid input. Enter a number between {min_val} and {max_val}.) 
 
 
-
+#CALCULATE PRICE FUNCTION
+def calculate_price(style, size):
+  #FINISH PRICE FUNCTION
