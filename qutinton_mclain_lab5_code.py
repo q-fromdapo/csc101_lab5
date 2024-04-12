@@ -44,11 +44,30 @@ def purchase_t_shirt(style_basic, style_graphic, style_band, size_small, size_me
   #GET CHOICE FUNC
 
 
+#MENU FUNCTION
+def show_menu():
+  print('Menu:')
+  print('1. Purchase a T-Shirt')
+  print('2. Show Statistics')
+  print('3. Exit')
+  while True:
+    choice = input('Choose an option: ')
+    if choice.isdigit() and 1 <= int(choice) <= 3:
+      return int(choice)
+    print('Invalid input. Enter a number between 1 and 3.')
 
 
+#MAIN FUNCTION
+def main():
+  style_basic = 0
+  style_graphic = 0
+  style_band = 0
+  size_small = 0
+  size_medium = 0
+  size_large = 0
+  total_sales = 0
 
-
-
+  
 
 
 
