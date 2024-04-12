@@ -2,7 +2,7 @@
 Author: Quinton McLain
 Program Title: T-Shirt Shop
 File Description:
-The program will help Matthew keep track of the T-shirt sales at his stoes.
+The program will help Matthew keep track of the T-shirt sales at his stores.
 '''
 
 #CONSTANT BASE PRICES AND ADDITIONAL COSTS
@@ -43,8 +43,9 @@ def purchase_t_shirt(style_basic, style_graphic, style_band, size_small, size_me
   print('3. Large')
   size = get_choice('Choose a size for your T-Shirt: ', 1, 3)
 
-  price = 
-  #CALCULATE PRICE FUNCTION
+  price = calculate_price(style, size)
+  total_sales += price
+  
 
 
 #MENU FUNCTION
@@ -70,6 +71,16 @@ def main():
   size_large = 0
   total_sales = 0
 
+  while True:
+    choice = show_menu()
+
+  if choice == 1:
+    style_basic, style_graphic, style_band, size_small, size_medium, size_large, total_sales = purchase_t_shirt(style_basic, style_graphic, style_band, size_small, size_medium, size_large, total_sales)
+  elif choice == 2:
+    show_stats(style_basic, style_graphic, style_band, size_small, size_medium, size_large, total_sales)
+  elif choice == 3:
+    return
+
   
 #STYLE AND SIZE CHOOSING FUNCTION
 def get_choice(choice, min_val, max_val):
@@ -81,7 +92,33 @@ def get_choice(choice, min_val, max_val):
         return choice
     print(f'Invalid input. Enter a number between {min_val} and {max_val}.) 
 
+'''basic_price = 12.99
+graphic_price = 16.99
+band_price = 24.99
+medium_size_fee = 2.00
+large_size_fee = 4.00'''
 
 #CALCULATE PRICE FUNCTION
 def calculate_price(style, size):
-  #FINISH PRICE FUNCTION
+  if style == 1:
+    price = basic_price
+  elif price = 2:
+    price = graphic_price
+  else:
+    price = band_price
+
+  if size == 2:
+    price += medium_size_fee
+  elif size == 3: 
+    price += large_size_fee
+
+  return price
+
+
+
+
+
+
+
+
+
